@@ -24,7 +24,7 @@ SECRET_KEY = 'wur9w$tt*3aq39f1%5$pu@w3&md)j)+uhg*onbbd^j0xu%u=8j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['poker-host.herokuapp.com','localhost']
 
 # Application definition
 
@@ -71,6 +71,7 @@ WSGI_APPLICATION = 'poker.wsgi.application'
 
 ASGI_APPLICATION = 'poker.routing.application'
 
+DISABLE_COLLECTSTATIC = 1
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
