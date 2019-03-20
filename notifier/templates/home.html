@@ -8,10 +8,10 @@
     document.addEventListener('DOMContentLoaded', function () {
         if ("WebSocket" in window) {
             // Let us open a web socket
-            var ws = new WebSocket("ws://localhost:8000/ws/");
+            var ws = new WebSocket("ws://poker-host.herokuapp.com/ws/");
 
             ws.onopen = function () {
-                console.log('sending test as a message to socket')
+                console.log('sending test as a message to socket');
                 ws.send("test");
             };
 
