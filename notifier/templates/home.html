@@ -8,7 +8,7 @@
     document.addEventListener('DOMContentLoaded', function () {
         if ("WebSocket" in window) {
             // Let us open a web socket
-            var ws = new WebSocket("ws://poker-host.herokuapp.com/ws/");
+            var ws = new WebSocket("wss://poker-host.herokuapp.com/ws/");
 
             ws.onopen = function () {
                 console.log('sending test as a message to socket');
